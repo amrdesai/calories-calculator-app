@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Calories Calculator App</h1>
+        <hr>
+
+        <div class="row">
+            <div class="four columns">
+                <!-- Calories Goal Input -->
+                <form class="calories-form">
+                    <label for="total-calories">Enter Your Calories Goal:</label>
+                    <input name="total-calories" type="text">
+                    <input class="button-primary" type="submit" value="Submit">
+                </form>
+            </div>
+            
+            <div class="four columns">
+                <h6>Calories Goal:</h6>
+                <h6>Calories Remaining:</h6>
+                <h6>Calories Consumed:</h6>
+            </div>     
+
+            <div class="four columns">
+                <h6>Protein:</h6>
+                <h6>Carbs:</h6>
+                <h6>Fats:</h6>
+            </div>
+        </div>
+        <hr>
+        
+
+        <!-- Add food form -->
+        <div>
+            <h5>Add Food:</h5>
+            <form class="food-form">
+                <div class="row">
+                    <label for="food">Food:</label>
+                    <input class="u-full-width" name="food" type="text" placeholder="Food">
+                </div>
+                <div class="row">
+                    <div class="three columns">
+                        <label for="food">Calories:</label>
+                        <input class="u-full-width" name="calories" type="text" placeholder="Calories">
+                    </div>
+
+                    <div class="three columns">
+                        <label for="protein">Protein:</label>
+                        <input class="u-full-width" name="protein" type="text" placeholder="Protein">
+                    </div>
+
+                    <div class="three columns">
+                        <label for="carbs">Carbs:</label>
+                        <input class="u-full-width" name="carbs" type="text" placeholder="Carbs">
+                    </div>
+                    <div class="three columns">
+                        <label for="fats">Fats:</label>
+                        <input class="u-full-width" name="fats" type="text" placeholder="Fats">
+                    </div>
+                </div>
+                <input class="button-primary" type="submit" value="Submit">
+
+            </form>
+        </div>
+
+
+        <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Protein</th>
+                <th>Carbs</th>
+                <th>Fats</th>
+                <th>Calories</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>Chicken</td>
+                <td>25</td>
+                <td>3</td>
+                <td>6</td>
+                <td>240</td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+
+
+
+
+
+
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+    
+</body>
+</html>
